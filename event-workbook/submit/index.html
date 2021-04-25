@@ -8,9 +8,15 @@
 </head>
 <body>
     <div>
-        <form id="submit-me">
-            <input id="name"/>
-            <input id="age"/>
+        <form onsubmit="submitForm(event)" id="submit-me">
+            <label for="colors"> What is your favorite color?</label>
+            <input type="color" id="colors" name="colors"/><br>
+            <label for="password">What is your password?</label>
+            <input type="password" id="password" name="password"/><br>
+            <label for="date">Pick a date</label>
+            <input type="date" id="date" name="name"><br>
+            <label for="week">Pick a week</label>
+            <input type="week" id="week" name="week">
             <button>Click Me</button>
             <!-- the button knows that it belongs to this form because it's nested in it. 
             A single button in a form will defualt to a submit button and will trigger a submit event -->
